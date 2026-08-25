@@ -6,7 +6,13 @@ const cliente = {
 };
 
 console.log(
-  `O nome do cliente é ${cliente.nome} e essa pessoa tem ${cliente.idade} anos.`
+  `O nome do cliente é ${cliente["nome"]} e essa pessoa tem ${["nome"]} anos.`
 );
 
 console.log(`Os 3 primeiros digitos do CPF são ${cliente.cpf.substring(0, 3)}`);
+
+const chaves = [ "nome" , "idade" , "cpf" ,"email"];
+
+chaves.forEach((chave) => {
+  console.log(` A chave $[chave] tem valor $[cliente[ chave]}`);
+});
