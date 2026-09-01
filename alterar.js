@@ -1,4 +1,4 @@
-const pessoa = {
+let pessoa = {
   nome: "Luma",
   profissao: "Engenheira",
 };
@@ -20,3 +20,5 @@ const novaPessoa = {
 };
 
 pessoa = novaPessoa;
+
+console.log(pessoa);
